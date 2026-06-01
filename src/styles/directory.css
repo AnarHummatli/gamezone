@@ -13,13 +13,67 @@
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 15px;
 }
 
 .hero-section p {
   color: #94a3b8;
   font-size: 16px;
+}
+
+.filter-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: #14171c;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid #1f232b;
+  margin-bottom: 40px;
+  transition: border-color 0.2s ease;
+}
+
+.search-box {
+  flex: 2;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #0b0c10;
+  color: #ffffff;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-box, .sort-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #94a3b8;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.panel-select {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #0b0c10;
+  color: white;
+  border: 1px solid #2d3748;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.search-input:focus, .panel-select:focus {
+  border-color: #00ff87;
 }
 
 .games-container {
