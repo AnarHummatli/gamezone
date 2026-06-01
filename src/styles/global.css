@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0c10;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-footer {
+  background-color: #14171c;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 1px solid #1f232b;
+}
+
+.main-footer p {
+  color: #94a3b8;
+  font-size: 14px;
+}
