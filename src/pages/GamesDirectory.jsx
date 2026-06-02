@@ -7,6 +7,7 @@ function GamesDirectory() {
   const [searchText, setSearchText] = useState('');
   const [platformFilter, setPlatformFilter] = useState('all');
   const [sortBy, setSortBy] = useState('default');
+  const [visibleCount, setVisibleCount] = useState(12);
 
   useEffect(() => {
     fetch('https://www.freetogame.com/api/games')
@@ -32,7 +33,11 @@ function GamesDirectory() {
     }
     return 0;
   });
-  
+
+  const handleLoadMore = () => {
+    setVisibleCount(prevCount => prevCount + 12);
+  };
+
   return (
     <main className="directory-main">
 
@@ -49,7 +54,10 @@ function GamesDirectory() {
             placeholder="Search for a game..."
             className="search-input"
             value={searchText}
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+              setVisibleCount(12);
+            }}
           />
         </div>
 
@@ -58,7 +66,10 @@ function GamesDirectory() {
           <select
             className="panel-select"
             value={platformFilter}
-            onChange={(e) => setPlatformFilter(e.target.value)}
+            onChange={(e) => {
+              setPlatformFilter(e.target.value);
+              setVisibleCount(12);
+            }}
           >
             <option value="all">All Platforms</option>
             <option value="pc">PC (Windows)</option>
@@ -72,7 +83,10 @@ function GamesDirectory() {
           <select
             className="panel-select"
             value={sortBy}
-            onChange={(e) => setSortBy(e.target.value)}
+            onChange={(e) => {
+              setSortBy(e.target.value);
+              setVisibleCount(12);
+            }}
           >
             <option value="default">Default</option>
             <option value="az">Name (A-Z)</option>
@@ -84,11 +98,19 @@ function GamesDirectory() {
 
       <section className="games-grid-section">
         <div className="games-container">
-          {sortedGames.slice(0, 12).map(game => (
+          {sortedGames.slice(0, visibleCount).map(game => (
             <GameCard key={game.id} game={game} />
           ))}
         </div>
       </section>
+
+      {sortedGames.length > visibleCount && (
+        <div className="load-more-container">
+          <button className="btn-load-more" onClick={handleLoadMore}>
+            Show More Games
+          </button>
+        </div>
+      )}
 
     </main>
   );
