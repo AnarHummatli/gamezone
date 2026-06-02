@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import '../styles/directory.css';
+
 function GameCard({ game }) {
     return (
         <article className="game-card">
@@ -11,7 +14,9 @@ function GameCard({ game }) {
                 <span className="game-platform">{game.platform}</span>
                 <p className="game-description">{game.short_description}</p>
                 <div className="card-actions">
-                    <button className="btn-details">View Details</button>
+                    <Link to={`/game/${game.id}`} className="btn-details">
+                        View Details
+                    </Link>
                     <button className="btn-add">+ Add To Library</button>
                 </div>
             </div>
