@@ -51,7 +51,8 @@
   transition: border-color 0.2s ease;
 }
 
-.filter-box, .sort-box {
+.filter-box,
+.sort-box {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -72,7 +73,8 @@
   transition: border-color 0.2s ease;
 }
 
-.search-input:focus, .panel-select:focus {
+.search-input:focus,
+.panel-select:focus {
   border-color: #00ff87;
 }
 
@@ -146,7 +148,8 @@
   gap: 10px;
 }
 
-.btn-details, .btn-add {
+.btn-details,
+.btn-add {
   width: 100%;
   padding: 10px;
   border-radius: 6px;
@@ -181,7 +184,7 @@
 .load-more-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 65px;
   margin-bottom: 20px;
 }
 
