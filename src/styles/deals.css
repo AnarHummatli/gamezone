@@ -401,3 +401,135 @@
     font-size: 2.20vw;
   }
 }
+
+@media (max-width: 599px) {
+  .deals-main {
+    max-width: 100vw;
+    padding: 4.00vw;
+  }
+
+  .deals-hero {
+    margin-bottom: 6.00vw;
+    padding: 0 2.00vw;
+  }
+
+  .deals-hero h1 {
+    font-size: 7.00vw;
+    margin-bottom: 2.50vw;
+    line-height: 1.3;
+  }
+
+  .deals-hero p {
+    font-size: 4.00vw;
+    line-height: 1.5;
+  }
+
+  .deals-filters-section {
+    padding: 4.00vw;
+    border-radius: 2.00vw;
+    margin-bottom: 6.00vw;
+  }
+
+  .filters-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4.00vw;
+  }
+
+  .filter-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.00vw;
+  }
+
+  .filter-group label {
+    font-size: 4.00vw;
+  }
+
+  .select-custom-wrapper {
+    display: block;
+    width: 100%;
+  }
+
+  .filter-group select {
+    width: 100%;
+    padding: 3.00vw;
+    font-size: 4.00vw;
+    border-radius: 1.50vw;
+    box-sizing: border-box;
+  }
+
+  .deals-container {
+    grid-template-columns: 1fr;
+    gap: 6.00vw;
+  }
+
+  .deal-card {
+    border-radius: 2.50vw;
+  }
+
+  .deal-image-wrapper {
+    height: 50.00vw;
+  }
+
+  .deal-badge {
+    font-size: 3.50vw;
+    padding: 1.00vw 2.00vw;
+    border-radius: 1.50vw;
+    top: 2.00vw;
+    right: 2.00vw;
+  }
+
+  .deal-content {
+    padding: 5.00vw;
+  }
+
+  .deal-title {
+    font-size: 5.50vw;
+    margin-bottom: 3.00vw;
+  }
+
+  .store-selector {
+    gap: 2.00vw;
+    margin-bottom: 4.00vw;
+  }
+
+  .store-pill {
+    padding: 1.50vw 3.00vw;
+    font-size: 3.50vw;
+    border-radius: 4.00vw;
+  }
+
+  .deal-prices {
+    gap: 3.00vw;
+    margin-bottom: 4.00vw;
+  }
+
+  .price-sale {
+    font-size: 7.00vw;
+  }
+
+  .price-original {
+    font-size: 4.50vw;
+  }
+
+  .deal-card-actions {
+    flex-direction: column;
+    gap: 3.00vw;
+    margin-top: 2.00vw;
+  }
+
+  .btn-view {
+    width: 100%;
+    padding: 3.50vw;
+    font-size: 4.00vw;
+    border-radius: 1.50vw;
+    text-align: center;
+  }
+
+  .deals-loading,
+  .no-deals-msg {
+    font-size: 4.00vw;
+    margin-top: 10.00vw;
+  }
+}

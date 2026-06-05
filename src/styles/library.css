@@ -279,3 +279,108 @@
     margin: 5.00vw 0;
   }
 }
+
+@media (max-width: 599px) {
+  .library-main {
+    max-width: 100vw;
+    padding: 4.00vw 3.00vw;
+  }
+
+  .library-hero {
+    margin-bottom: 6.00vw;
+  }
+
+  .library-hero h1 {
+    font-size: 7.00vw;
+    margin-bottom: 2.00vw;
+  }
+
+  .library-hero p {
+    font-size: 3.80vw;
+  }
+
+  .empty-library {
+    padding: 8.00vw 4.00vw;
+    border-radius: 2.00vw;
+    margin-top: 6.00vw;
+  }
+
+  .empty-library h2 {
+    font-size: 4.80vw;
+    margin-bottom: 2.00vw;
+  }
+
+  .empty-library p {
+    font-size: 3.80vw;
+  }
+
+  .category-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.00vw;
+    margin-bottom: 4.00vw;
+  }
+
+  .category-title {
+    font-size: 4.50vw;
+    border-left-width: 0.80vw;
+    padding-left: 2.00vw;
+  }
+
+  .total-cost-badge {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.50vw 4.00vw;
+    font-size: 3.80vw;
+    border-radius: 1.50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .total-cost-badge span {
+    font-size: 4.50vw;
+    margin-left: 2.00vw;
+  }
+
+  .library-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.50vw;
+  }
+
+  .library-card {
+    border-radius: 2.00vw;
+  }
+
+  .library-image-wrapper {
+    height: 26.00vw;
+  }
+
+  .library-price-badge {
+    font-size: 3.00vw;
+    padding: 1.00vw 2.00vw;
+    border-radius: 1.00vw;
+    top: 1.50vw;
+    right: 1.50vw;
+    border-width: 0.30vw;
+  }
+
+  .library-content {
+    padding: 2.50vw;
+  }
+
+  .library-title {
+    font-size: 3.80vw;
+    margin-bottom: 2.50vw;
+  }
+
+  .btn-remove {
+    padding: 2.20vw 0;
+    font-size: 3.50vw;
+    border-radius: 1.50vw;
+  }
+
+  .library-divider {
+    margin: 6.00vw 0;
+  }
+}

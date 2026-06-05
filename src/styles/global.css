@@ -19,9 +19,21 @@ body {
 @media (min-width: 600px) and (max-width: 990px) {
   .main-footer {
     padding: 1.5vw;
+    margin-top: 1.5vw;
   }
 
   .main-footer p {
     font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-footer {
+    padding: 6.00vw 14vw;
+    margin-top: 5vw;
+  }
+
+  .main-footer p {
+    font-size: 3.50vw;
   }
 }

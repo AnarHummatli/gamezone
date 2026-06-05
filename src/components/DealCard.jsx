@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLibrary } from '../context/LibraryContext'; // Context-i import edirik
+import { useLibrary } from '../context/LibraryContext';
 import whiteBg from '../assets/white-bg.svg';
 import '../styles/deals.css';
 

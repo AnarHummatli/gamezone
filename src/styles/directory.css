@@ -329,7 +329,7 @@
 
   .load-more-container {
     margin-top: 5.5vw !important;
-    margin-bottom: 2.00vw !important;
+    margin-bottom: 0.5vw !important;
   }
 
   .btn-load-more {
@@ -339,4 +339,118 @@
     border-width: 0.20vw !important;
   }
 
+}
+
+@media (max-width: 599px) {
+  .directory-main {
+    max-width: 100vw;
+    padding: 4.00vw;
+  }
+
+  .hero-section {
+    margin-bottom: 6.00vw;
+    padding: 0 2.00vw;
+  }
+
+  .hero-section h1 {
+    font-size: 7.00vw;
+    margin-bottom: 2.50vw;
+  }
+
+  .hero-section p {
+    font-size: 4.00vw;
+  }
+
+  .filter-panel {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4.00vw;
+    padding: 4.00vw;
+    border-radius: 2.00vw;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 3.00vw;
+    font-size: 4.00vw;
+    border-radius: 1.50vw;
+    box-sizing: border-box;
+  }
+
+  .filter-box,
+  .sort-box {
+    flex-direction: column;
+    align-items: stretch;
+    font-size: 4.00vw;
+    gap: 2.00vw;
+  }
+
+  .panel-select {
+    width: 100%;
+    padding: 3.00vw;
+    font-size: 4.00vw;
+    border-radius: 1.50vw;
+    box-sizing: border-box;
+  }
+
+  .games-container {
+    grid-template-columns: 1fr;
+    gap: 6.00vw;
+  }
+
+  .game-card {
+    border-radius: 2.50vw;
+  }
+
+  .card-image-wrapper {
+    height: 50.00vw;
+  }
+
+  .card-content {
+    padding: 5.00vw;
+  }
+
+  .game-title {
+    font-size: 5.50vw;
+    margin-bottom: 2.00vw;
+  }
+
+  .game-platform {
+    font-size: 3.50vw;
+    padding: 1.00vw 3.00vw;
+    border-radius: 4.00vw;
+    margin-bottom: 3.00vw;
+  }
+
+  .game-description {
+    font-size: 3.80vw;
+    height: 18.00vw;
+    margin-bottom: 4.00vw;
+  }
+
+  .card-actions {
+    gap: 3.00vw;
+  }
+
+  .btn-details,
+  .btn-add {
+    padding: 3.50vw !important;
+    font-size: 4.00vw !important;
+    border-radius: 1.50vw !important;
+  }
+
+  .load-more-container {
+    margin-top: 11vw !important;
+    margin-bottom: 1.5vw !important;
+  }
+
+  .btn-load-more {
+    padding: 3.50vw 8.00vw !important;
+    font-size: 4vw !important;
+    border-radius: 2.00vw !important;
+  }
 }

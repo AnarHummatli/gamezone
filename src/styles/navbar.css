@@ -75,3 +75,36 @@
     border-radius: 0.80vw;
   }
 }
+
+@media (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    padding: 4.00vw;
+    gap: 3.00vw;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    width: 100%;
+    gap: 3.00vw;
+  }
+
+  .navbar-logo {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.00vw;
+    width: 100%;
+  }
+
+  .nav-item {
+    font-size: 3.4vw;
+    padding: 2.00vw 4.00vw;
+    border-radius: 1.50vw;
+  }
+}
