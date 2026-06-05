@@ -191,6 +191,18 @@
   box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
 }
 
+.btn-add.saved {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+}
+
+.btn-add.saved:hover {
+  background-color: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+}
+
 .load-more-container {
   display: flex;
   justify-content: center;
