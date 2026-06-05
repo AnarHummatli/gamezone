@@ -11,7 +11,7 @@ import MyLibrary from './pages/MyLibrary';
 function App() {
   return (
     <LibraryProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/gamezone">
         <Navbar />
         <main>
           <Routes>
