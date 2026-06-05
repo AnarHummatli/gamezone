@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import whiteBg from '../assets/white-bg.svg';
 import '../styles/details.css';
 
 function GameDetails() {
@@ -39,7 +40,12 @@ function GameDetails() {
 
         <section className="game-header-section">
           <div className="game-hero-image-wrapper">
-            <img src={game.thumbnail} alt={game.title} className="game-main-img" />
+            <img
+              src={game.thumbnail}
+              alt={game.title}
+              className="game-main-img" 
+              onError={(e) => { e.target.src = {whiteBg}; }}
+              />
           </div>
 
           <div className="game-header-info">

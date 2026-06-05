@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import whiteBg from '../assets/white-bg.svg';
 import '../styles/directory.css';
 
 function GameCard({ game }) {
@@ -6,7 +7,12 @@ function GameCard({ game }) {
         <article className="game-card">
 
             <div className="card-image-wrapper">
-                <img src={game.thumbnail} alt={game.title} className="game-image" />
+                <img 
+                src={game.thumbnail} 
+                alt={game.title} 
+                className="game-image"
+                onError={(e) => { e.target.src = {whiteBg}; }} 
+                />
             </div>
 
             <div className="card-content">

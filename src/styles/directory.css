@@ -44,7 +44,7 @@
   padding: 10px 15px;
   font-size: 15px;
   background-color: #0b0c10;
-  color: #ffffff;
+  color: white;
   border: 1px solid #2d3748;
   border-radius: 6px;
   outline: none;
@@ -116,7 +116,7 @@
 .game-title {
   font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: white;
   margin-bottom: 5px;
 }
 

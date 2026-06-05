@@ -117,7 +117,7 @@
 
 .game-description-section h2, .requirements-section h2, .screenshots-section h2 {
   font-size: 22px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 20px;
   border-left: 4px solid #00ff87;
   padding-left: 12px;
@@ -146,7 +146,7 @@
 
 .req-item strong {
   display: block;
-  color: #ffffff;
+  color: white;
   margin-bottom: 5px;
 }
 
