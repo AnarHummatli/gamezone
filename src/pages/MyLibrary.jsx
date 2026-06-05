@@ -31,7 +31,7 @@ function MyLibrary() {
               <div className="category-header">
                 <h2 className="category-title">Free-to-Play Games ({freeGames.length})</h2>
               </div>
-              
+
               <div className="library-grid-section">
                 <div className="library-container">
                   {freeGames.map((game) => (

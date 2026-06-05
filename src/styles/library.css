@@ -179,5 +179,103 @@
   padding: 0.33vw 0.67vw;
   border-radius: 0.40vw;
   border: 0.07vw solid #00ff87;
-  z-index: 2; 
+  z-index: 2;
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .library-main {
+    max-width: 94vw;
+    padding: 3.00vw 2.00vw;
+  }
+
+  .library-hero {
+    margin-bottom: 4.00vw;
+  }
+
+  .library-hero h1 {
+    font-size: 3.50vw;
+    letter-spacing: 0.05vw;
+    margin-bottom: 1.20vw;
+  }
+
+  .library-hero p {
+    font-size: 1.70vw;
+  }
+
+  .empty-library {
+    padding: 5.00vw 3.00vw;
+    border-radius: 1.20vw;
+    margin-top: 5.00vw;
+  }
+
+  .empty-library h2 {
+    font-size: 2.60vw;
+    margin-bottom: 1.50vw;
+  }
+
+  .empty-library p {
+    font-size: 1.80vw;
+  }
+
+  .category-header {
+    margin-bottom: 2.50vw;
+    gap: 2.00vw;
+  }
+
+  .category-title {
+    font-size: 2.40vw;
+    border-left-width: 0.40vw;
+    padding-left: 1.50vw;
+  }
+
+  .total-cost-badge {
+    padding: 1.20vw 2.00vw;
+    font-size: 1.70vw;
+    border-radius: 0.80vw;
+  }
+
+  .total-cost-badge span {
+    font-size: 2.20vw;
+    margin-left: 1.00vw;
+  }
+
+  .library-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.00vw;
+  }
+
+  .library-card {
+    border-radius: 1.00vw;
+  }
+
+  .library-image-wrapper {
+    height: 15.00vw;
+  }
+
+  .library-price-badge {
+    font-size: 1.40vw;
+    padding: 0.40vw 1.00vw;
+    border-radius: 0.50vw;
+    top: 0.80vw;
+    right: 0.80vw;
+  }
+
+  .library-content {
+    padding: 1.80vw;
+  }
+
+  .library-title {
+    font-size: 1.80vw;
+    margin-bottom: 1.50vw;
+  }
+
+  .btn-remove {
+    padding: 1.00vw 0.80vw;
+    font-size: 1.40vw;
+    border-radius: 0.60vw;
+  }
+
+  .library-divider {
+    margin: 5.00vw 0;
+  }
 }

@@ -57,7 +57,8 @@
   color: #ffffff;
 }
 
-.badge-genre, .badge-platform {
+.badge-genre,
+.badge-platform {
   display: inline-block;
   background-color: #1f232b;
   color: #00ff87;
@@ -106,7 +107,9 @@
   box-shadow: 0 0.33vw 1.00vw rgba(0, 255, 135, 0.3);
 }
 
-.game-description-section, .requirements-section, .screenshots-section {
+.game-description-section,
+.requirements-section,
+.screenshots-section {
   background-color: #14171c;
   padding: 2.01vw;
   border-radius: 0.80vw;
@@ -114,7 +117,9 @@
   margin-bottom: 2.01vw;
 }
 
-.game-description-section h2, .requirements-section h2, .screenshots-section h2 {
+.game-description-section h2,
+.requirements-section h2,
+.screenshots-section h2 {
   font-size: 1.47vw;
   color: white;
   margin-bottom: 1.34vw;
@@ -165,7 +170,8 @@
   transform: scale(1.03);
 }
 
-.loading-box, .error-box {
+.loading-box,
+.error-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,4 +183,103 @@
 
 .error-box {
   color: #ef4444;
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .details-container {
+    max-width: 94vw;
+  }
+
+  .back-btn {
+    font-size: 1.80vw;
+    margin-bottom: 2.50vw;
+  }
+
+  .game-header-section {
+    flex-direction: column;
+    padding: 3.00vw;
+    gap: 3.00vw;
+  }
+
+  .game-main-img {
+    height: 34vw;
+    object-fit: cover;
+  }
+
+  .game-header-info h1 {
+    font-size: 3.50vw;
+    margin-bottom: 1.50vw;
+  }
+
+  .badge-genre,
+  .badge-platform {
+    font-size: 1.60vw;
+    padding: 0.80vw 1.50vw;
+    border-radius: 2.00vw;
+    margin-bottom: 2.00vw;
+  }
+
+  .quick-meta {
+    padding: 2.00vw;
+    margin-bottom: 2.50vw;
+  }
+
+  .quick-meta p {
+    font-size: 1.80vw;
+    margin: 1.00vw 0;
+  }
+
+  .play-now-btn {
+    font-size: 2.1vw;
+    padding: 1.5vw;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 1.00vw;
+  }
+
+  .game-description-section,
+  .requirements-section,
+  .screenshots-section {
+    padding: 3.00vw;
+    border-radius: 1.20vw;
+    margin-bottom: 3.00vw;
+  }
+
+  .game-description-section h2,
+  .requirements-section h2,
+  .screenshots-section h2 {
+    font-size: 2.40vw;
+    margin-bottom: 2.00vw;
+    border-left-width: 0.40vw;
+    padding-left: 1.50vw;
+  }
+
+  .game-description-section p {
+    font-size: 1.80vw;
+  }
+
+  .requirements-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.00vw;
+  }
+
+  .req-item {
+    font-size: 1.65vw;
+    padding: 1.50vw;
+    border-radius: 0.80vw;
+  }
+
+  .screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.00vw;
+  }
+
+  .screenshot-img {
+    border-radius: 0.80vw;
+  }
+
+  .loading-box,
+  .error-box {
+    font-size: 2.20vw;
+  }
 }

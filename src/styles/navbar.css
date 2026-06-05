@@ -44,3 +44,34 @@
   background-color: #1f232b;
   color: white;
 }
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.8vw;
+  }
+
+  .navbar-logo {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  .navbar-links {
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+  }
+
+  .nav-item {
+    font-size: 1.85vw;
+    padding: 0.6vw 2vw;
+    border-radius: 0.80vw;
+  }
+}

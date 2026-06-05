@@ -15,3 +15,13 @@ body {
   color: #94a3b8;
   font-size: 0.94vw;
 }
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .main-footer {
+    padding: 1.5vw;
+  }
+
+  .main-footer p {
+    font-size: 1.6vw;
+  }
+}

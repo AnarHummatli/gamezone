@@ -43,9 +43,9 @@ function GameDetails() {
             <img
               src={game.thumbnail}
               alt={game.title}
-              className="game-main-img" 
+              className="game-main-img"
               onError={(e) => { e.target.src = whiteBg; }}
-              />
+            />
           </div>
 
           <div className="game-header-info">

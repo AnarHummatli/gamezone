@@ -163,13 +163,6 @@
   display: block;
   text-align: center;
   text-decoration: none;
-  width: 100%;
-  padding: 0.67vw;
-  border-radius: 0.40vw;
-  font-weight: 600;
-  font-size: 0.94vw;
-  cursor: pointer;
-  transition: all 0.2s ease;
   background-color: transparent;
   color: white;
   border: 0.07vw solid #334155;
@@ -199,7 +192,7 @@
 
 .btn-add.saved:hover {
   background-color: #ef4444;
-  color: #ffffff;
+  color: white;
   box-shadow: 0 0 1.00vw rgba(239, 68, 68, 0.4);
 }
 
@@ -226,4 +219,124 @@
   background-color: #00ff87;
   color: #0b0c10;
   box-shadow: 0 0 1.34vw rgba(0, 255, 135, 0.4);
+}
+
+@media (min-width: 600px) and (max-width: 991px) {
+  .directory-main {
+    max-width: 94vw;
+    padding: 3.00vw 2.00vw;
+  }
+
+  .hero-section {
+    margin-bottom: 4.00vw;
+    padding: 0 2.00vw;
+  }
+
+  .hero-section h1 {
+    font-size: 3.50vw;
+    letter-spacing: 0.05vw;
+    margin-bottom: 1.20vw;
+    line-height: 1.3;
+  }
+
+  .hero-section p {
+    font-size: 1.70vw;
+    line-height: 1.5;
+  }
+
+  .filter-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.00vw;
+    padding: 2.00vw;
+    border-radius: 1.00vw;
+  }
+
+  .search-box {
+    flex: 1 1 100%;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 1.20vw 2.00vw;
+    font-size: 1.70vw;
+    border-radius: 0.80vw;
+  }
+
+  .filter-box,
+  .sort-box {
+    flex: 1;
+    justify-content: flex-start;
+    font-size: 1.70vw;
+    gap: 1.50vw;
+  }
+
+  .panel-select {
+    flex-grow: 1;
+    padding: 1.20vw 2.00vw;
+    font-size: 1.60vw;
+    border-radius: 0.80vw;
+  }
+
+  .games-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.00vw;
+  }
+
+  .game-card {
+    border-radius: 1.20vw;
+  }
+
+  .card-image-wrapper {
+    height: 22.00vw;
+  }
+
+  .card-content {
+    padding: 2.50vw;
+  }
+
+  .game-title {
+    font-size: 2.20vw;
+    margin-bottom: 1.00vw;
+  }
+
+  .game-platform {
+    font-size: 1.40vw;
+    padding: 0.40vw 1.50vw;
+    border-radius: 2.00vw;
+    margin-bottom: 1.50vw;
+  }
+
+  .game-description {
+    font-size: 1.60vw;
+    height: 7.00vw;
+    margin-bottom: 2.00vw;
+  }
+
+  .card-actions {
+    gap: 1.50vw;
+  }
+
+  .btn-details,
+  .btn-add {
+    padding: 1.20vw 1.00vw !important;
+    font-size: 1.60vw !important;
+    border-radius: 0.80vw !important;
+    white-space: nowrap !important;
+  }
+
+  .load-more-container {
+    margin-top: 5.5vw !important;
+    margin-bottom: 2.00vw !important;
+  }
+
+  .btn-load-more {
+    padding: 1.40vw 4.00vw !important;
+    font-size: 1.50vw !important;
+    border-radius: 0.80vw !important;
+    border-width: 0.20vw !important;
+  }
+
 }
