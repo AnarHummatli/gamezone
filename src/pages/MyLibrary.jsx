@@ -21,14 +21,17 @@ function MyLibrary() {
         <div className="empty-library">
           <h2>Your library is currently empty 😢</h2>
           <p>
-            Browse the <Link to="/">Catalog</Link> or check out <Link to="/deals">Deals</Link> to find some games.
+            Browse the <Link to="/">Home</Link> or check out <Link to="/deals">Deals</Link> to find some games.
           </p>
         </div>
       ) : (
         <>
           {freeGames.length > 0 && (
             <section className="library-category">
-              <h2 className="category-title">Free-to-Play Games ({freeGames.length})</h2>
+              <div className="category-header">
+                <h2 className="category-title">Free-to-Play Games ({freeGames.length})</h2>
+              </div>
+              
               <div className="library-grid-section">
                 <div className="library-container">
                   {freeGames.map((game) => (

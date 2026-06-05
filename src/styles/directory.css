@@ -1,37 +1,37 @@
 .directory-main {
-  max-width: 1300px;
+  max-width: 87.01vw;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 2.68vw 1.34vw;
 }
 
 .hero-section {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.35vw;
 }
 
 .hero-section h1 {
-  font-size: 36px;
+  font-size: 2.41vw;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.07vw;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 1.00vw;
 }
 
 .hero-section p {
   color: #94a3b8;
-  font-size: 16px;
+  font-size: 1.07vw;
 }
 
 .filter-panel {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 1.34vw;
   background-color: #14171c;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid #1f232b;
-  margin-bottom: 40px;
+  padding: 1.00vw 1.67vw;
+  border-radius: 0.67vw;
+  border: 0.07vw solid #1f232b;
+  margin-bottom: 2.68vw;
   transition: border-color 0.2s ease;
 }
 
@@ -41,12 +41,12 @@
 
 .search-input {
   width: 100%;
-  padding: 10px 15px;
-  font-size: 15px;
+  padding: 0.67vw 1.00vw;
+  font-size: 1.00vw;
   background-color: #0b0c10;
   color: white;
-  border: 1px solid #2d3748;
-  border-radius: 6px;
+  border: 0.07vw solid #2d3748;
+  border-radius: 0.40vw;
   outline: none;
   transition: border-color 0.2s ease;
 }
@@ -55,19 +55,19 @@
 .sort-box {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.67vw;
   color: #94a3b8;
-  font-size: 15px;
+  font-size: 1.00vw;
   white-space: nowrap;
 }
 
 .panel-select {
-  padding: 10px 15px;
-  font-size: 15px;
+  padding: 0.67vw 1.00vw;
+  font-size: 1.00vw;
   background-color: #0b0c10;
   color: white;
-  border: 1px solid #2d3748;
-  border-radius: 6px;
+  border: 0.07vw solid #2d3748;
+  border-radius: 0.40vw;
   outline: none;
   cursor: pointer;
   transition: border-color 0.2s ease;
@@ -81,25 +81,25 @@
 .games-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 2.01vw;
 }
 
 .game-card {
   background-color: #14171c;
-  border-radius: 12px;
+  border-radius: 0.80vw;
   overflow: hidden;
-  border: 1px solid #1f232b;
+  border: 0.07vw solid #1f232b;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .game-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.33vw);
   border-color: #00ff87;
 }
 
 .card-image-wrapper {
   width: 100%;
-  height: 180px;
+  height: 12.05vw;
   overflow: hidden;
 }
 
@@ -110,33 +110,33 @@
 }
 
 .card-content {
-  padding: 20px;
+  padding: 1.34vw;
 }
 
 .game-title {
-  font-size: 20px;
+  font-size: 1.34vw;
   font-weight: 700;
   color: white;
-  margin-bottom: 5px;
+  margin-bottom: 0.33vw;
 }
 
 .game-platform {
   display: inline-block;
   background-color: #1f232b;
   color: #00ff87;
-  font-size: 12px;
+  font-size: 0.80vw;
   font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-bottom: 15px;
+  padding: 0.27vw 1.00vw;
+  border-radius: 1.34vw;
+  margin-bottom: 1.00vw;
 }
 
 .game-description {
   color: #94a3b8;
-  font-size: 14px;
+  font-size: 0.94vw;
   line-height: 1.5;
-  margin-bottom: 20px;
-  height: 65px;
+  margin-bottom: 1.34vw;
+  height: 4.35vw;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #94a3b8 #1f232b;
@@ -145,16 +145,16 @@
 .card-actions {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.67vw;
 }
 
 .btn-details,
 .btn-add {
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 0.67vw;
+  border-radius: 0.40vw;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.94vw;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -164,15 +164,15 @@
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 0.67vw;
+  border-radius: 0.40vw;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.94vw;
   cursor: pointer;
   transition: all 0.2s ease;
   background-color: transparent;
   color: white;
-  border: 1px solid #334155;
+  border: 0.07vw solid #334155;
 }
 
 .btn-details:hover {
@@ -188,36 +188,36 @@
 
 .btn-add:hover {
   background-color: #00dd74;
-  box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+  box-shadow: 0 0 1.00vw rgba(0, 255, 135, 0.4);
 }
 
 .btn-add.saved {
   background-color: transparent;
   color: #ef4444;
-  border: 1px solid #ef4444;
+  border: 0.07vw solid #ef4444;
 }
 
 .btn-add.saved:hover {
   background-color: #ef4444;
   color: #ffffff;
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);
+  box-shadow: 0 0 1.00vw rgba(239, 68, 68, 0.4);
 }
 
 .load-more-container {
   display: flex;
   justify-content: center;
-  margin-top: 65px;
-  margin-bottom: 20px;
+  margin-top: 4.35vw;
+  margin-bottom: 1.34vw;
 }
 
 .btn-load-more {
   background-color: transparent;
   color: #00ff87;
-  border: 2px solid #00ff87;
-  padding: 12px 35px;
-  font-size: 16px;
+  border: 0.13vw solid #00ff87;
+  padding: 0.80vw 2.34vw;
+  font-size: 1.07vw;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 0.54vw;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -225,5 +225,5 @@
 .btn-load-more:hover {
   background-color: #00ff87;
   color: #0b0c10;
-  box-shadow: 0 0 20px rgba(0, 255, 135, 0.4);
+  box-shadow: 0 0 1.34vw rgba(0, 255, 135, 0.4);
 }

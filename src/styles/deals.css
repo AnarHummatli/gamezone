@@ -1,34 +1,33 @@
 .deals-main {
-  max-width: 1300px;
+  max-width: 87.01vw;
   margin: 0 auto;
-  padding: 40px 20px;
-  min-height: 100vh;
+  padding: 2.68vw 1.34vw;
 }
 
 .deals-hero {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 3.35vw;
 }
 
 .deals-hero h1 {
-  font-size: 36px;
+  font-size: 2.41vw;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 0.07vw;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 1.00vw;
 }
 
 .deals-hero p {
   color: #94a3b8;
-  font-size: 16px;
+  font-size: 1.07vw;
 }
 
 .deals-filters-section {
   background-color: #14171c;
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid #1f232b;
-  margin-bottom: 40px;
+  padding: 1.00vw 1.67vw;
+  border-radius: 0.67vw;
+  border: 0.07vw solid #1f232b;
+  margin-bottom: 2.68vw;
   width: 100%;
   box-sizing: border-box;
 }
@@ -38,7 +37,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 2.01vw;
   width: 100%;
 }
 
@@ -46,12 +45,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 0.80vw;
 }
 
 .filter-group label {
   color: #94a3b8;
-  font-size: 15px;
+  font-size: 1.00vw;
   font-weight: normal;
   white-space: nowrap;
 }
@@ -61,16 +60,16 @@
 }
 
 .filter-group select {
-  padding: 10px 15px;
-  font-size: 15px;
+  padding: 0.67vw 1.00vw;
+  font-size: 1.00vw;
   background-color: #0b0c10;
   color: white;
-  border: 1px solid #2d3748;
-  border-radius: 6px;
+  border: 0.07vw solid #2d3748;
+  border-radius: 0.40vw;
   outline: none;
   cursor: pointer;
   transition: border-color 0.2s ease;
-  min-width: 180px;
+  min-width: 12.05vw;
 }
 
 .filter-group select:focus,
@@ -81,28 +80,28 @@
 .deals-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 2.01vw;
 }
 
 .deal-card {
   background-color: #14171c;
-  border-radius: 12px;
+  border-radius: 0.80vw;
   overflow: hidden;
-  border: 1px solid #1f232b;
+  border: 0.07vw solid #1f232b;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .deal-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-0.33vw);
   border-color: #00ff87;
 }
 
 .deal-image-wrapper {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 12.05vw;
   background-color: #0b0c10;
 }
 
@@ -114,19 +113,19 @@
 
 .deal-badge {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0.67vw;
+  right: 0.67vw;
   background-color: #ef4444;
   color: white;
   font-weight: 700;
-  font-size: 13px;
-  padding: 4px 8px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.4);
+  font-size: 0.87vw;
+  padding: 0.27vw 0.54vw;
+  border-radius: 0.40vw;
+  box-shadow: 0 0.13vw 0.54vw rgba(239, 68, 68, 0.4);
 }
 
 .deal-content {
-  padding: 20px;
+  padding: 1.34vw;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -134,26 +133,26 @@
 }
 
 .deal-title {
-  font-size: 20px;
+  font-size: 1.34vw;
   font-weight: 700;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 1.00vw;
 }
 
 .store-selector {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
+  gap: 0.54vw;
+  margin-bottom: 1.00vw;
 }
 
 .store-pill {
   background-color: #1f232b;
   color: #94a3b8;
-  border: 1px solid #334155;
-  padding: 4px 10px;
-  border-radius: 15px;
-  font-size: 12px;
+  border: 0.07vw solid #334155;
+  padding: 0.27vw 0.67vw;
+  border-radius: 1.00vw;
+  font-size: 0.80vw;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -173,27 +172,27 @@
 .deal-prices {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  gap: 0.80vw;
+  margin-bottom: 1.34vw;
 }
 
 .price-sale {
-  font-size: 22px;
+  font-size: 1.47vw;
   font-weight: 800;
   color: #00ff87;
 }
 
 .price-original {
-  font-size: 15px;
+  font-size: 1.00vw;
   color: #64748b;
   text-decoration: line-through;
 }
 
 .deal-card-actions {
   display: flex;
-  gap: 10px;
+  gap: 0.67vw;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 1.00vw;
 }
 
 .btn-view {
@@ -202,13 +201,13 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.67vw;
   background-color: transparent;
   color: white;
-  border: 1px solid #334155;
-  border-radius: 6px;
+  border: 0.07vw solid #334155;
+  border-radius: 0.40vw;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.94vw;
   transition: all 0.2s ease;
 }
 
@@ -219,10 +218,10 @@
 
 .btn-add {
   flex: 1;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 0.67vw;
+  border-radius: 0.40vw;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.94vw;
   cursor: pointer;
   transition: all 0.2s ease;
   background-color: #00ff87;
@@ -232,13 +231,13 @@
 
 .btn-add:hover {
   background-color: #00dd74;
-  box-shadow: 0 0 15px rgba(0, 255, 135, 0.4);
+  box-shadow: 0 0 1.00vw rgba(0, 255, 135, 0.4);
 }
 
 .btn-add.saved {
   background-color: transparent;
   color: #ef4444;
-  border: 1px solid #ef4444;
+  border: 0.07vw solid #ef4444;
 }
 
 .btn-add.saved:hover {
@@ -249,18 +248,18 @@
 .load-more-container {
   display: flex;
   justify-content: center;
-  margin-top: 65px;
-  margin-bottom: 20px;
+  margin-top: 4.35vw;
+  margin-bottom: 1.34vw;
 }
 
 .btn-load-more {
   background-color: transparent;
   color: #00ff87;
-  border: 2px solid #00ff87;
-  padding: 12px 35px;
-  font-size: 16px;
+  border: 0.13vw solid #00ff87;
+  padding: 0.80vw 2.34vw;
+  font-size: 1.07vw;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 0.54vw;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -268,7 +267,7 @@
 .btn-load-more:hover {
   background-color: #00ff87;
   color: #0b0c10;
-  box-shadow: 0 0 20px rgba(0, 255, 135, 0.4);
+  box-shadow: 0 0 1.34vw rgba(0, 255, 135, 0.4);
 }
 
 .deals-loading {
@@ -276,7 +275,7 @@
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  font-size: 18px;
+  font-size: 1.20vw;
   color: #94a3b8;
 }
 
@@ -284,6 +283,6 @@
   color: #a0a0a0;
   text-align: center;
   width: 100%;
-  font-size: 1.2rem;
-  margin-top: 40px;
+  font-size: 1.28vw;
+  margin-top: 2.68vw;
 }

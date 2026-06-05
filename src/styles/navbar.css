@@ -3,8 +3,8 @@
   justify-content: flex-start;
   align-items: center;
   background-color: #14171c;
-  padding: 15px 40px;
-  border-bottom: 1px solid #1f232b;
+  padding: 1.00vw 2.68vw;
+  border-bottom: 0.07vw solid #1f232b;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -13,30 +13,30 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 2.34vw;
 }
 
 .navbar-logo {
-  font-size: 22px;
+  font-size: 1.47vw;
   font-weight: 800;
   color: #00ff87;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03vw;
   user-select: none;
 }
 
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1.00vw;
 }
 
 .nav-item {
   color: #94a3b8;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 1.00vw;
   font-weight: 600;
-  padding: 8px 16px;
-  border-radius: 6px;
+  padding: 0.54vw 1.07vw;
+  border-radius: 0.40vw;
   transition: all 0.2s ease;
 }
 

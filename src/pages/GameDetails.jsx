@@ -44,7 +44,7 @@ function GameDetails() {
               src={game.thumbnail}
               alt={game.title}
               className="game-main-img" 
-              onError={(e) => { e.target.src = {whiteBg}; }}
+              onError={(e) => { e.target.src = whiteBg; }}
               />
           </div>
 

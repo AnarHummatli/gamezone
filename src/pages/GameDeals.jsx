@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import DealCard from '../components/DealCard';
 import '../styles/deals.css';
 
@@ -44,35 +44,30 @@ function GameDeals() {
       });
   }, []);
 
-  const filteredAndSortedDeals = useMemo(() => {
-    let result = [...deals];
+  let filteredDeals = [...deals];
 
-    if (storeFilter === 'Other') {
-      result = result.filter(game => 
-        game.deals.some(deal => !mainStores.includes(deal.storeID))
-      );
-    } else if (storeFilter !== 'All') {
-      result = result.filter(game => 
-        game.deals.some(deal => deal.storeID === storeFilter)
-      );
-    }
+  if (storeFilter === 'Other') {
+    filteredDeals = filteredDeals.filter(game =>
+      game.deals.some(deal => !mainStores.includes(deal.storeID))
+    );
+  } else if (storeFilter !== 'All') {
+    filteredDeals = filteredDeals.filter(game =>
+      game.deals.some(deal => deal.storeID === storeFilter)
+    );
+  }
 
+  const filteredAndSortedDeals = [...filteredDeals].sort((a, b) => {
     if (sortFilter === 'Highest') {
-      result.sort((a, b) => {
-        const maxSavingsA = Math.max(...a.deals.map(d => parseFloat(d.savings)));
-        const maxSavingsB = Math.max(...b.deals.map(d => parseFloat(d.savings)));
-        return maxSavingsB - maxSavingsA;
-      });
+      const maxSavingsA = Math.max(...a.deals.map(d => parseFloat(d.savings)));
+      const maxSavingsB = Math.max(...b.deals.map(d => parseFloat(d.savings)));
+      return maxSavingsB - maxSavingsA;
     } else if (sortFilter === 'Lowest') {
-      result.sort((a, b) => {
-        const maxSavingsA = Math.max(...a.deals.map(d => parseFloat(d.savings)));
-        const maxSavingsB = Math.max(...b.deals.map(d => parseFloat(d.savings)));
-        return maxSavingsA - maxSavingsB;
-      });
+      const maxSavingsA = Math.max(...a.deals.map(d => parseFloat(d.savings)));
+      const maxSavingsB = Math.max(...b.deals.map(d => parseFloat(d.savings)));
+      return maxSavingsA - maxSavingsB;
     }
-
-    return result;
-  }, [deals, storeFilter, sortFilter]);
+    return 0;
+  });
 
   const handleStoreChange = (e) => {
     setStoreFilter(e.target.value);
